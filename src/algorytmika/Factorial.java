@@ -21,8 +21,7 @@ public class Factorial {
     public static void main(String[] args) {
         System.out.println("---Calculate factorial----");
         System.out.print("n: ");
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+        int n = new Scanner(System.in).nextInt();
         int product = factorial(n);
         System.out.println("Product of all: " + product);
     }
