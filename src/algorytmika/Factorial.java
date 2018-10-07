@@ -26,6 +26,7 @@ public class Factorial {
         System.out.println("Product of all: " + product);
     }
 
+    //factor metod
     private static int factorial(int n) {
         if (n>1)
             return n * factorial(n - 1);
