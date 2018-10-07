@@ -49,7 +49,6 @@ public class nTyWyrazCiagu {
         }
     }
 
-    //
     private static float nthWordOfSequence(int n) {
         if (n<=0)
             return 0;
