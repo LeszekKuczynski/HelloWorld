@@ -29,24 +29,20 @@ public class nTyWyrazCiagu {
     }
 
     private static float nthWordOfSequenceLiniowo(int n) {
+        float a_n;
         float a_n_2 = 1f;
         float a_n_1 = 0.5f;
-        float a_n;
-
-        int i = 3;
 
         if(n<=0) return 0;
-        else if(n==1) return a_n_2;
-        else if(n==2) return a_n_1;
-        else {
-            do{
-                a_n = (-1)* (a_n_1) * (a_n_2);
-                a_n_2 = a_n_1;
-                a_n_1 = a_n;
-                n--;
-            }while(n>2);
-            return a_n;
-        }
+        if(n==1) return a_n_2;
+        if(n==2) return a_n_1;
+        do {
+            a_n = (-1) * (a_n_1) * (a_n_2);
+            a_n_2 = a_n_1;
+            a_n_1 = a_n;
+            n--;
+        } while (n > 2);
+        return a_n;
     }
 
     private static float nthWordOfSequence(int n) {
