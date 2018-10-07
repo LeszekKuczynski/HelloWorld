@@ -12,9 +12,6 @@ public class Fibonaci {
     }
 
     private static int fibonaci(int n) {
-        int f0 = 0;
-        int f1=1;
-
         if(n==0)
             return 0;
         else if (n==1)
