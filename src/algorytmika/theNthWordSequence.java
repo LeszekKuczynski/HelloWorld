@@ -16,19 +16,19 @@ package algorytmika;
 
 import java.util.Scanner;
 
-public class nTyWyrazCiagu {
+public class theNthWordSequence {
     public static void main(String[] args) {
         System.out.println("===n-ty wyraz ciagu---");
 
         int n = new Scanner(System.in).nextInt();
         //
-        float result = nthWordOfSequenceLiniowo(n);
+        float result = nthWordOfSequenceLinear(n);
         System.out.println("--wer. liniowa\n" + result);
         result =  nthWordOfSequence(n);
         System.out.println("--wer. rekurencyjna\n" + result);
     }
 
-    private static float nthWordOfSequenceLiniowo(int n) {
+    private static float nthWordOfSequenceLinear(int n) {
         float a_n;
         float a_n_2 = 1f;
         float a_n_1 = 0.5f;
