@@ -1,10 +1,11 @@
+/*Suma cyfr rekurencyjnie*/
 package algorytmika;
 
 import java.util.Scanner;
 
-public class AdditionElementaOfGivenNumber {
+public class SumEachElement {
     public static void main(String[] args) {
-        System.out.println("---Addition of each element from given decimal number----");
+        System.out.println("---Sum together each number from given decimal number----");
         long givenNumber = new Scanner(System.in).nextLong();
         if (givenNumber >= 0)
             System.out.println(addition(givenNumber));
