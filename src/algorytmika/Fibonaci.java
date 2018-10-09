@@ -11,6 +11,7 @@ public class Fibonaci {
         System.out.println(result);
     }
 
+    //
     private static int fibonaci(int n) {
         if(n<=0)
             return 0;
