@@ -14,20 +14,16 @@ import java.util.Scanner;
 
 public class DecimalToBinary {
     public static void main(String[] args) {
-        System.out.println("--Change number to binary number---");
-        Integer decymal = new Scanner(System.in).nextInt();
-
-        String binary = decymalToBinary(decymal);
-        System.out.println(binary);
+        System.out.println("--Change given decimal number to binary system representacion---");
+        long decymal = new Scanner(System.in).nextLong();
+        if(decymal>-1)
+            System.out.println("Binary system representacion: " + decymalToBinary(decymal));
+        else System.out.println("Only positive itegers and zero allowed");
     }
-
-    private static String decymalToBinary(int decymal) {
-        if (decymal < 1)
-            return "0";
-        if (decymal == 1)
-            return "1";
-        if (decymal % 2 == 1)
-            return decymalToBinary(decymal / 2) + "1";
-        return decymalToBinary(decymal / 2) + "0";
+    private static String decymalToBinary(long decymal) {
+        if (decymal < 1) return "0";
+        if (decymal == 1) return "1";
+        if (decymal % 2 == 0) return decymalToBinary(decymal / 2) + "0";
+        return decymalToBinary(decymal / 2) + "1";
     }
 }
