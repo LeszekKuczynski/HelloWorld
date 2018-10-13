@@ -96,7 +96,7 @@ public class Sequences {
         int a=1;
         temp[0] = a;
         for(int i=1; i<n; i++){
-            a=+a+2;
+            a=a+2;
             temp[i]=a;
         }
         return  temp;
