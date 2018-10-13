@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class PrintFigures {
     public static void main(String[] args) {
+        //
         System.out.println("==Draw 4 figures. Give number of hight and wight: ");
         int n = new Scanner(System.in).nextInt();
 
