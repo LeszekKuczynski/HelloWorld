@@ -6,10 +6,9 @@ public class Pesel {
     public static void main(String[] args) {
 
         int[] pesel = new int[11];
-        String input = new Scanner(System.in).next();
+        String input = new Scanner(System.in).nextLine();
         String[] pesels = input.split(" ");
         for(String element : pesels){
-
             System.out.println(checkPesel(element));
         }
     }
